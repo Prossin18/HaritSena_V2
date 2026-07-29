@@ -1,0 +1,47 @@
+{% load static %} 
+{% comment %} this tells django ki static file load karaychi aahe ,
+
+also this allows to use the other static file ssuch as images, javascript,css and other static files
+
+{% endcomment %}
+
+
+<!DOCTYPE html> 
+<!-- this line tells browser that the document uses html5 standards -->
+<html lang="en">  
+     <!-- this tells that webpage ki primary lngauge eng hain -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title %} Harit Sena {%endblock%}</title>
+    <!-- It allows each page to have its own page title while reusing the same base.html template. -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+     {% comment %} browser bootstrap sever se boootstrap download karega .. {% endcomment %}
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <link rel = "styelsheet"  href = "{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+    {% include 'includes/navbar.html' %}
+    {% block  content%}
+    {% endblock %}
+
+    {% include "includes/footer.html" %}
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% comment %} custom js {% endcomment %}
+    <script src = "{% static 'js/script.js' %}"></script>
+</body>
+</html>
+
+{% comment %} 
+           
+            include - used for reusable components like navbar sidebar, footer 
+            block - used for dynami content that changes from page to page 
+            
+{% endcomment %}
+
+
+

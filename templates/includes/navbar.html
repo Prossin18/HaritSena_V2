@@ -1,0 +1,70 @@
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top">
+    <!-- class="navbar" - is element ko navabar ki styling and behavior do -->
+    <!-- bg-white - is the bootstrap utility class for  giving the white bg -->
+    <!-- sticky-top = iska matlab page scroll , lekin navbar chipka hua -->
+    <!-- navbar-expand-lg = yeh navbar ko expanded rakhta hain for the large screen chhoti screens k liye chhota ho jata hain  -->
+
+    <div class="container ">
+
+        <!-- logo -->
+        <a class = "navbar-brand d-flex flex-column text-success " href="#">
+
+
+             <!-- d-flex = yeh bootstrap ki display felx utility hain  -->
+              <!-- flex-column = it arranges the both  element vertically , by default d-flex horizontal -->
+             
+            <span class="fw-bold fs-4">HaritSena</span>
+
+            <small class="text-muted">Clean Today, Green Tommorow</small>
+        </a>
+
+        <!-- navigation links -->
+        <div class = "collapse navbar-collapse " id="mainNavbar">
+            <ul class="navbar-nav mx-auto">
+
+                <!-- navbar-nav = converts the ul into the navigation menu -->
+                <!-- mx-auto = m-margin, x- left+right,auto = automatic margin,, 
+                 brings the element into the center  -->
+                <li class="nav-item">
+                    <a class="nav-link active " href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact Us</a>
+                </li>
+
+                <!-- nav-item = proper spacing and layout for the each navigation link -->
+
+            </ul>
+
+            <!-- Login & SignUp -->
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-success me-2">
+                    Login
+                </a>
+
+                <a href="#" class="btn btn-success">
+                    SignUp
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- we use anchor tag for the logo , because logo should navigate to the home page from any page -->
+    
+    </div>
+
+
+
+
+</nav>

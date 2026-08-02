@@ -1,0 +1,112 @@
+/* hero section */
+.hero-section
+{
+padding: 80px 0;
+}
+
+/* hero badge */
+.hero-badge{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #eaf7ef;
+    color: #198754;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size:0.9rem;
+
+    font-weight: 500;
+    margin-bottom: 25px;
+
+}
+
+/* hero title */
+
+.hero-title
+{
+    font-family: "poppins",sans-serif;
+    font-size:3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color:#212529;
+    margin-bottom: 25px;
+
+}
+
+.hero-title span{
+    color: #198754;
+}
+
+/* hero description */
+.hero-description
+{
+    font-family: "Inter",sans-serif;
+    line-height: 1.8;
+    font-size: 1.1 rem;
+    color: #6c757d;
+    max-width:550px;
+    margin-bottom: 35px;
+}
+
+/* hero buttons */
+.hero-buttons
+{
+    display:flex;
+    gap:15px;
+    margin-bottom: 40px;
+}
+
+.hero-btn-primary
+,.hero-btn-secondary
+{
+    padding:12px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition:all 0.3s ease;
+}
+
+.hero-btn-primary:hover
+,.hero-btn-secondary:hover{
+transform: translateY(-3px);
+}
+
+/* Hero trust section */
+.hero-users{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icons
+{
+    display: flex;
+
+  
+    
+
+}
+
+ .user-circle
+{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: -10px;
+  background-color: #eaf7ef;
+  border-radius: 50%;
+  color: black;
+  font-size: 20px;
+  border: 3px solid white;
+}
+
+.user-circle:first-child{
+    margin-left: 0;
+}
+
+.user-text{
+    color:#6c757d;
+    font-size:0.95rem;
+    max-width:250px;
+}

@@ -1,12 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello, Welcome to the JUNGLE!
-    </h1>
-</body>
-</html>
+{%extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="hero-section">
+    <div class="container">
+        <!-- boot strap ka .contsiner aoutomatically left aur right padding deta hain ..  -->
+        <div class="row align-items-center">
+            <!-- align item center batat hain ki ..  row ke andar jitne bhi columns hain unko verticaly center kaaro -->
+
+            <!-- left content -->
+            <div class="col-lg-6 hero-content">
+
+                <!-- badgee -->
+                <div class="hero-badge">
+                    <span class=" bagde-icon">
+                        &#127807;
+                    </span>
+                    <span class="badge-text">
+                        Building a Greener Future
+                    </span>
+
+                </div>
+
+                <!-- heading -->
+                <h1 class="hero-title">
+                    Smart Waste
+                    <span>Management</span>
+                    For Everyone
+                </h1>
+
+                <!-- description -->
+                <p class="hero-description">
+                    HaritSena connects citizens, waste collectors, and recycling
+                    partners through a smart platform that makes waste management
+                    simple, rewarding, and environmentally responsible.
+                </p>
+
+                <!-- buttons -->
+                <div class="hero-buttons">
+                    <a href="#" class="btn btn-success hero-btn-primary">
+                        Request Pickup
+                    </a>
+
+                    <a href="#" class="btn btn-outline-success hero-btn-secondary">
+                        Learn More
+                    </a>
+                </div>
+
+                <!-- trust users -->
+                <div class="hero-users">
+                    <div class="user-icons">
+                        <div class="user-circle">&#127793;</div>
+                        <div class="user-circle">&#9851;</div>
+                        <div class="user-circle">&#127757;</div>
+                    </div>
+
+                    <div class="user-text">Join citizens making waste management smarter every day.</div>
+
+
+
+                </div>
+
+            </div>
+            <!-- left content end -->
+
+            <!-- right content -->
+            <div class="col-lg-6 hero-image">
+            </div>
+
+            <!-- right content end -->
+
+
+        
+        </div>
+    </div>
+</section>
+{% endblock  %}

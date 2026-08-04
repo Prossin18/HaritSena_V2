@@ -1,0 +1,97 @@
+
+<nav class="navbar navbar-expand-lg bg-white sticky-top hs-navbar">
+    <!-- class="navbar" - is element ko navabar ki styling and behavior do -->
+    <!-- bg-white - is the bootstrap utility class for  giving the white bg -->
+    <!-- sticky-top = iska matlab page scroll , lekin navbar chipka hua -->
+    <!-- navbar-expand-lg = yeh navbar ko expanded rakhta hain for the large screen chhoti screens k liye chhota ho jata hain  -->
+
+    <div class="container ">
+
+        <!-- Brand -->
+        <a class = "navbar-brand d-flex flex-column  " href="{% url 'home' %}">
+
+
+             <!-- d-flex = yeh bootstrap ki display felx utility hain  -->
+              <!-- flex-column = it arranges the both  element vertically , by default d-flex horizontal -->
+             
+            <span class="brand-name">HaritSena</span>
+
+            <small class="brand-tagline">Clean Today, Green Tomorrow</small>
+        </a>
+
+        <!-- navigation links -->
+        <!-- hamburger -->
+        <button 
+            class="navbar-toggler"
+            type = 'button'
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+
+                <!-- navbar-toggler = yeh django ko batat hain ki yeh ek haburger hain ..
+                 data-bs-toggle="collapse" == yeh batat hain django ko  ki button dabane par collapse hoga..  aur hide ho jayenge sab navigation links
+                 
+                 data-bs-toggle="collapse"  = yeh batat hain ki CLOSE YA OPEN KARO LEKIN ,, kise??
+                 is sawal ka jwab deta hain -> data-bs-target = "#mainNavbar"
+                 -->
+
+                 <!-- aria-control -->
+
+                 <!-- navbar-toggler-icon = yeh automatically hamburger icon ko banata hain  -->
+
+
+                 
+
+        </button>
+        <div class = "collapse navbar-collapse " id="mainNavbar">
+            <ul class="navbar-nav mx-auto">
+
+                <!-- navbar-nav = converts the ul into the navigation menu -->
+                <!-- mx-auto = m-margin, x- left+right,auto = automatic margin,, 
+                 brings the element into the center  -->
+                <li class="nav-item">
+                    <a class="nav-link active " href="{% url 'home'%}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Leaderboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Rewards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact Us</a>
+                </li>
+
+                <!-- nav-item = proper spacing and layout for the each navigation link -->
+
+            </ul>
+
+            <!-- Login & SignUp -->
+            <div class="d-flex">
+                <a href="#" class="btn btn-outline-success me-2 login-btn">
+                    Login
+                </a>
+
+                <a href="#" class="btn btn-success signup-btn">
+                    SignUp
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- we use anchor tag for the logo , because logo should navigate to the home page from any page -->
+    
+    </div>
+
+
+
+
+</nav>

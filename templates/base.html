@@ -15,11 +15,29 @@ also this allows to use the other static file ssuch as images, javascript,css an
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{%block title %} Harit Sena {%endblock%}</title>
     <!-- It allows each page to have its own page title while reusing the same base.html template. -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-     {% comment %} browser bootstrap sever se boootstrap download karega .. {% endcomment %}
-     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-     <link rel = "styelsheet"  href = "{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    {% comment %} browser bootstrap sever se boootstrap download karega .. {% endcomment %}
+    
+    {% comment %} google fonts {% endcomment %}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    {% comment %} custom css file {% endcomment %}
+    <link rel = "stylesheet"  href = "{% static 'css/style.css' %}">
 
+    {% comment %} navbar css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+
+    {% comment %} favicon {% endcomment %}
+    <link  rel = "icon" href = "{% static 'images/logo.png' %}">
+
+    {% comment %} SEO {% endcomment %}
+    <meta name = "description" content ="Harit Sena - Waste Management Platform">
+
+    {% comment %} author {% endcomment %}
+    <meta name = "author" content = "Harit Sena Team">
+
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    
 </head>
 <body>
 

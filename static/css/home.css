@@ -203,3 +203,281 @@ transform: translateY(-3px);
         font-size: 0.85rem;
     }
 }
+
+
+/* _______________________________________________________________________________________________________________________ */
+
+/* mission section */
+.mission-section
+{
+    position:relative;
+}
+
+.mission-card
+{
+    background-color:#fff ;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08);
+    padding:20px;
+
+    transform: translateY(-30px);
+
+}
+
+
+
+.mission-card .row
+{
+    align-items: center;
+}
+
+.mission-item
+{
+    display:flex;
+    align-items: flex-start;
+    gap:20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.mission-item:hover{
+    transform: translateY(-8px);
+}
+
+
+.mission-icon
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #eaf7ef;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
+.mission-content h4{
+    font-family: "poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:#212529;
+    margin-bottom:10px;
+}
+.mission-content p{
+    font-family: "inter", sans-serif;
+}
+
+/* .mission-card .col-lg-4
+{
+    padding: 25px;
+} */
+
+.mission-card .col-lg-4:not(:last-child)
+{
+    border-right: 1px solid #e9ecef;
+}
+
+@media(max-width :767px)
+{
+    .mission-section{
+        margin-top: 30px;
+    }
+
+    .mission-card
+    {
+        transform:translateY(0);
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    .mission-card .col-lg-4{
+        border-right: none  !important;
+        border-bottom: 1px solid #e9ecef;
+        padding: 20px 0;
+
+    }
+    
+    .mission-card .col-lg-4:last-child{
+        border-bottom: none;
+    }
+
+    .mission-item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .mission-icon{
+        width: 60px;
+        height: 60px;
+
+        font-size: 36px;
+    }
+
+    .mission-content h4{
+        font-size: 1.15rem;
+
+    }
+
+    .mission-content p{
+        font-size: 0.95rem;
+        margin-bottom: 0;
+    }
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* ===========================
+   Features Section
+=========================== */
+
+.features-section{
+    padding:40px 0;
+    background:#fff;
+}
+
+/* Heading */
+
+.section-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-subtitle{
+    color:#198754;
+    font-size:0.9rem;
+    font-weight:600;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.section-title{
+    font-size:2.5rem;
+    font-weight:700;
+    margin:15px 0;
+    color:#212529;
+}
+
+.section-title span{
+    color:#198754;
+}
+
+.section-description{
+    max-width:600px;
+    margin:0 auto;
+    color:#6c757d;
+    line-height:1.7;
+    font-size:1rem;
+}
+
+/* ===========================
+   Feature Card
+=========================== */
+
+.feature-item{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:30px 20px;
+
+    /* min-height:240px; */
+    height: 100%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
+
+    gap:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    transition:all .3s ease;
+
+}
+
+.feature-item:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,0.12);
+
+}
+
+/* Icon */
+
+.feature-icon{
+
+    width:70px;
+    height:70px;
+
+    border-radius:50%;
+
+    background:#eaf7ef;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:32px;
+
+}
+
+/* Title */
+
+.feature-title{
+
+    font-size:1.15rem;
+    font-weight:600;
+    color:#212529;
+
+    margin:0;
+
+}
+
+/* Description */
+
+.feature-description{
+
+    font-size:0.95rem;
+
+    color:#6c757d;
+
+    line-height:1.6;
+
+    margin:0;
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:991px){
+
+    .section-title{
+        font-size:2rem;
+    }
+
+}
+
+@media(max-width:767px){
+
+    .features-section{
+        padding:60px 0;
+    }
+
+    .section-title{
+        font-size:1.8rem;
+    }
+
+    .feature-item{
+        min-height:220px;
+    }
+
+}
+

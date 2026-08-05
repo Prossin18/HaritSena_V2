@@ -24,6 +24,8 @@ also this allows to use the other static file ssuch as images, javascript,css an
     {% comment %} custom css file {% endcomment %}
     <link rel = "stylesheet"  href = "{% static 'css/style.css' %}">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
     {% comment %} navbar css {% endcomment %}
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 
@@ -37,6 +39,8 @@ also this allows to use the other static file ssuch as images, javascript,css an
     <meta name = "author" content = "Harit Sena Team">
 
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
     
 </head>
 <body>
@@ -51,6 +55,18 @@ also this allows to use the other static file ssuch as images, javascript,css an
 
     {% comment %} custom js {% endcomment %}
     <script src = "{% static 'js/script.js' %}"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+            AOS.init({
+                duration : 1000,
+                easing : "ease-in-out",
+                once: true,
+                offset : 100
+            
+            });
+    </script>
 </body>
 </html>
 

@@ -45,7 +45,7 @@ padding: 50px 0;
     font-size: 1.1rem;
     color: #6c757d;
     max-width:500px;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 /* hero buttons */
@@ -341,7 +341,7 @@ transform: translateY(-3px);
 
 .section-heading{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 
 .section-subtitle{
@@ -477,6 +477,459 @@ transform: translateY(-3px);
 
     .feature-item{
         min-height:220px;
+    }
+
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* ===========================
+   Process Section
+=========================== */
+
+.process-section{
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.section-heading-title
+{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.process-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    margin-top:20px;
+}
+
+.process-item{
+    /* flex: 1;  */
+    /* flex-direction: column; */
+    /* background: #fff; */
+    /* border-radius: 20px; */
+    /* padding: 35px 25px; */
+    text-align: center;
+    position: relative;
+    /* box-shadow: 0 10px 30px rgba(0,0,0,0.08); */
+    /* transition: all 0.3s ease; */
+    /* height: 100%; */
+    width:180px;
+    
+}
+.process-arrow
+{
+    position: absolute;
+    top: 35px;
+    right: -30px;
+    color: #198754;
+    font-size: 24px;
+    z-index: 10;
+
+}
+
+.process-item:last-child .process-arrow
+{
+    display: none;
+
+}
+
+
+.process-number{
+    width: 24px;
+    height: 24px;
+    background: #198754;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin: 0 auto 20px;  /* top l-r bottom */
+    font-size: 11px;
+    position: absolute;
+    bottom: -5px;
+    left: 10%;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+}
+
+.process-icon{
+    width: 90px;
+    height: 90px;
+    background-color: #eaf7ef;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.process-title{
+    margin-top: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 2px;
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.process-description
+{
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.5;
+    max-width: 180px;
+    margin: 0 auto;
+    width: 150px;
+}
+
+@media (max-width:991px)
+{
+    .process-wrapper
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        
+    }
+
+    .process-item
+    {
+        width: 100%;
+        max-width: 280px;
+        
+    }
+
+    .process-arrow
+    {
+        display: none;
+
+    }
+    .process-title{
+        min-height: auto;
+
+    }
+
+    .process-description
+    {
+        width:100%;
+        max-width:220px;
+    }
+}
+
+
+/* _______________________________________________________________________________________________________________________ */
+
+/* reward section */
+
+/* =========================
+   REWARDS SECTION
+========================= */
+
+.reward-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.reward-section .section-heading-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   REWARDS WRAPPER
+========================= */
+
+.rewards-wrapper {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 5px 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.rewards-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* =========================
+   REWARD CARD
+========================= */
+
+.reward-card {
+    flex: 0 0 190px;
+    width: 190px;
+    min-width: 190px;
+
+    scroll-snap-align: start;
+
+    background: #fff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+
+    overflow: hidden;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.reward-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   REWARD IMAGE
+========================= */
+
+.reward-image {
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #f5f5f5;
+    overflow: hidden;
+}
+
+.reward-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================
+   CARD TITLE
+========================= */
+
+.reward-card h5 {
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #212529;
+
+    margin: 10px 5px 4px;
+
+    min-height: 18px;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.reward-points {
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #198754;
+
+    margin: 0 0 10px;
+}
+
+
+/* =========================
+   REDEEM BUTTON
+========================= */
+
+.reward-btn {
+    display: inline-block;
+
+    align-self: center;
+
+    background: #198754;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 500;
+
+    padding: 6px 14px;
+
+    border-radius: 5px;
+
+    margin-top: auto;
+    margin-bottom: 12px;
+
+    transition: background 0.3s ease;
+}
+
+.reward-btn:hover {
+    background: #157347;
+    color: #fff;
+}
+
+
+/* =========================
+   LEFT / RIGHT ARROWS
+========================= */
+
+.reward-nav {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 35px;
+    height: 35px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #fff;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+
+    color: #198754;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 10;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.reward-nav:hover {
+    background: #198754;
+    color: #fff;
+}
+
+.reward-nav.prev {
+    left: 0;
+}
+
+.reward-nav.next {
+    right: 0;
+}
+
+/* Rewards slider */
+
+.rewards-slider{
+    position: relative;
+    width: 100%;
+    padding: 0 45px;
+}
+
+@media (max-width: 768px){
+    .reward-section{
+        padding: 60px 0;
+    }
+
+    .reward-section .section-heading-title{
+        margin-bottom: 25px;
+    }
+
+    .rewards-slider{
+        padding: 0 35px;
+    }
+
+    .rewards-wrapper{
+        gap: 12px;
+        padding: 5px 0;
+    }
+
+    .reward-card{
+        flex: 0 0 160px;
+        width: 160px;
+        min-width: 160px;
+    }
+
+    .reward-image{
+        height: 125px;
+    }
+
+    .reward-card h5{
+        font-size: 12px;
+        margin: 9px 5px 4px;
+    }
+
+    .reward-points{
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .reward-btn{
+        font-size: 10px;
+        padding: 5px 11px;
+        margin-bottom: 10px;
+    }
+
+    .reward-nav{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .reward-section {
+        padding: 50px 0;
+    }
+
+    .rewards-slider {
+        padding: 0 32px;
+    }
+
+    .reward-card {
+        flex: 0 0 150px;
+        width: 150px;
+        min-width: 150px;
+    }
+
+    .reward-image {
+        height: 115px;
+    }
+
+    .reward-card h5 {
+        font-size: 11px;
+    }
+
+    .reward-points {
+        font-size: 10px;
+    }
+
+    .reward-btn {
+        font-size: 9px;
+        padding: 5px 10px;
+    }
+
+    .reward-nav {
+        width: 28px;
+        height: 28px;
     }
 
 }

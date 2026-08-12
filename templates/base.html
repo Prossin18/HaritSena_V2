@@ -29,6 +29,10 @@ also this allows to use the other static file ssuch as images, javascript,css an
     {% comment %} navbar css {% endcomment %}
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 
+     {% comment %} footer css {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+
     {% comment %} favicon {% endcomment %}
     <link  rel = "icon" href = "{% static 'images/logo.png' %}">
 
@@ -39,6 +43,15 @@ also this allows to use the other static file ssuch as images, javascript,css an
     <meta name = "author" content = "Harit Sena Team">
 
     <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- font awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
     
@@ -67,6 +80,8 @@ also this allows to use the other static file ssuch as images, javascript,css an
             
             });
     </script>
+    <script src = "{% static 'js/home.js' %}"></script>
+
 </body>
 </html>
 

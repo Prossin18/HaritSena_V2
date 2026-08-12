@@ -50,7 +50,7 @@ navigation bar
 
 .hs-navbar .nav-link.active
 {
-    color: #198754;
+    color: #198754 !important;
     font-weight: 600;
     border-bottom: 2px solid #198754;
 }

@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!-- contact hero -->
+<section class="contact-hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Left Content -->
+            <div class="col-lg-6 contact-hero-content">
+
+                <!-- Badge -->
+                <div class="contact-hero-badge" data-aos="fade-up" data-aor-delay="100">
+                    <span class="contact-badge-icoon">
+                        🌿
+                    </span>
+                    <span class="contact-badge-text">
+                        Contact Us
+                    </span>
+
+                </div>
+
+                <!-- Heading -->
+                <h1 class="contact-hero-title" data-aos="fade-up" data-aos-delay="200">
+                    Get in <span>Touch</span>
+                </h1>
+
+                <!-- Green Line -->
+                <div class="contact-hero-line" data-aos="fade-up" data-aos-delay="250">
+
+                </div>
+
+                <!-- Description -->
+                <p class="contact-hero-description" data-aos="fade-up" data-aos-delay="300">
+                    We'd love to hear from you!<br>
+                    Have a question, suggestion, or need help?<br>
+                    Reach out to the HaritSena team.
+                </p>
+            </div>
+
+            <!-- Right Image -->
+            <div class="col-lg-6 contact-hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="{% static 'images/contact-hero.png' %}" alt="Contact HaritSena">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact hero end -->
+
+<!-- Contact Information -->
+<section class="contact-details-section">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- Contact Info -->
+            <div class="col-lg-4">
+                <div class="contact-info-card" data-aos="fade-right" data-aos-delay="800">
+                    <h2 class="contact-info-title">
+                        Contact <span>Information</span>
+                    </h2>
+
+                    <!-- Location -->
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h5>Our Location</h5>
+
+                            <p>
+                               2, Grey Building, Vishnunagar, <br>
+                               Punawale, India - 411033
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-envelope-fill"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h5>Email Us</h5>
+
+                            <p>
+                                sangaleatul143@gmail.com<br>
+                                info@haritsena.org
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="bi bi-telephone-fill"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h5>Call Us</h5>
+
+                            <p>
+                                +91 86690 64559<br>
+                                +91 87654 32109
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Working Hours -->
+                    <div class="contact-info-item">
+
+                        <div class="contact-info-icon">
+                            <i class="bi bi-clock-fill"></i>
+                        </div>
+
+                        <div class="contact-info-content">
+                            <h5>Working Hours</h5>
+
+                            <p>
+                                Monday - Sunday<br>
+                                7:00 AM - 9:00 PM
+                            </p>
+
+                            <!-- <p class="contact-sunday">
+                                Sunday<br>
+                                Closed
+                            </p> -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-8">
+            <div class="contact-form-card" data-aos="fade-left" data-aos-delay="800">
+                <h2 class="contact-form-title">
+                    Send Us a <span>Message</span>
+                </h2>
+
+                <form>
+                    <!-- Naame -->
+                    <div class="contact-form-group">
+                        <label for="contactName">
+                            Your Name
+                        </label>
+
+                        <input type="text" id="contactName" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-form-group">
+                        <label for="contactEmail">
+                            Your Email
+                        </label>
+
+                        <input type="text" id="contactEmail" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <!-- Subject -->
+                    <div class="contact-form-group">
+                        <label for="contactSubject">
+                            Subject
+                        </label>
+
+                        <input type="text" id="contactSubject" class="form-control" placeholder="Enter subject">
+                    </div>
+
+                    <!-- Message -->
+                    <div class="contact-form-group">
+                        <label for="contactMessage">
+                            Your Message
+                        </label>
+
+                        <textarea id="contactMessage" class="form-control" rows="4" placeholder="Type your message here..."></textarea>
+                    </div>
+
+                    <!-- submit -->
+                    <button type="submit" class="contact-submit-btn">
+                        Send Message
+                        <i class="bi bi-send"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Be a part of the change -->
+<section class="contact-cta-section">
+    <div class="container">
+        <div class="contact-cta-wrapper" data-aos="fade-up" data-aos-duration="800">
+            <!-- Left Image -->
+            <div class="contact-cta-image" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
+                <img src="{% static 'images/cta-plant.png' %}" alt="">
+
+            </div>
+
+            <div class="contact-cta-content" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">
+                <h2>Be a part of the <span>Change</span></h2>
+
+                <p>
+                    Join HaritSena and help us build
+                    a cleaner and greener tomorrow.
+                </p>
+            </div>
+
+            <!-- Button -->
+            <div class="contact-cta-button" data-aos="fade-left" data-aos-duration="800" data-aos-delay="350">
+                <a href="#" class="contact-cta-btn">
+                    Join HaritSena
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock %}

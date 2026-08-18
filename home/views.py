@@ -10,6 +10,8 @@ def about(request):
 def contact(request):
     return render(request,'home/contact.html') 
 
+def login(request):
+    return render(request,'home/login.html') 
 
 
 # Create your views here.

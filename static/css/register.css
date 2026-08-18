@@ -1,0 +1,611 @@
+*{
+    margin: 0;  /* Removes the default outside spacing that browsers give to elements. */
+    padding: 0; /* Removes the default inside spacing of elements */
+    box-sizing: border-box; /* This controls how an element's width and height are calculated. */
+    /* Without it: width: 200px; padding: 20px; border: 5px solid; The actual width can become: 200 + 20 + 20 + 5 + 5 = 250px */
+    /* With: box-sizing: border-box; the 200px includes the padding and border, so the total width stays 200px. */
+}
+
+.body{
+    font-family: "Inter", sans-serif;
+    background: #ffffff;
+    color: #212529;
+}
+
+/* Main register page */
+.register-page{
+    min-height: 100vh; /* vh means viewport height — the height of the browser window. 100vh = 100% of the screen height.*/
+    display: flex;
+    overflow: hidden; /* If anything goes outside the boundaries of .register-page, hide it. */
+}
+
+/* Left side */
+.register-left{
+    width: 43%;
+    min-height: 100vh;
+
+    /* background-color: #f3fbf5; */
+
+    background-image: url("../images/register-illustration.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;    
+    position: relative;
+    overflow: hidden;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brand */
+.register-brand{
+    position: relative;
+    z-index: 2;
+}
+
+.register-brand h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 2px;
+}
+
+.register-brand p{
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin: 0;
+}
+
+/* Welcome */
+.register-welcome{
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.register-welcome h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #212529;
+}
+
+.register-welcome h1 span{
+    color: #198754;
+}
+
+.register-green-line{
+    width: 90%;
+    height: 3px;
+    background-color: #198754;
+    margin: 12px 0;
+}
+
+.register-welcome p{
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #59636e;
+}
+
+
+/* Right side */
+.register-right{
+    width: 57%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+}
+
+/* register card */
+.register-heading{
+    width: 100%;
+    max-width: 660px;
+    padding: 35px 75px;
+    border: 1px solid #e5e9ec;
+    border-radius: 24px;
+    background: #ffffff;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Heading */
+.register-heading h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.register-heading h1 span{
+    color: #198754;
+}
+
+.register-subtitle{
+    color: #6c757d;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* Form */
+.register-form{
+    width: 100%;
+}
+
+/* Form Group */
+.form-group{
+    margin-bottom: 18px;
+}
+
+.form-group label{
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #212529;
+    margin-bottom: 9px;
+}
+
+/* Input box */
+.input-box{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 0 20px;
+    transition: border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.input-box:focus-within{
+    border-color: #198754;
+    box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.1);
+}
+
+/* :focus-within means: Apply these styles when this element OR any element inside it is focused. */
+
+/* Input icons */
+/* The > means direct child. Select the <i> only if it is the first child of .input-box.*/
+.input-box > i:first-child{
+    font-size: 1.45rem;
+    color: #68737f;
+    margin-right: 18px;
+}
+
+/* Inputs */
+.input-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1rem;
+    color: #212529;
+}
+
+/* ::placeholder This is a CSS pseudo-element that targets the placeholder text: */
+/* Select the placeholder text of an input that is inside .input-box. */
+.input-box input::placeholder{
+    color: #7d8794;
+}
+
+/* Password eye */
+.password-toggle{  /* Class of eye logo */
+    font-size: 1.3rem;
+    margin: 0;
+    cursor: pointer; /* When you move your mouse over the icon, the cursor changes from: Arrow cursor → 👆 Hand cursor*/
+    color: #68737f;
+}
+
+/* Remember + forgot password */
+.register-options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0 18px;
+}
+
+/* Remember me */
+.register-terms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #68737f;
+    cursor: pointer;
+}
+
+.register-terms input{
+    width: 20px;
+    height: 20px;
+    accent-color: #198754;
+    cursor: pointer;
+}
+
+/* forgot password */
+.forgot-password{
+    color: #198754;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover{
+    color: #157347;
+}
+
+/* register button */
+.register-btn{
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    background-color: #198754;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-btn i{
+    position: absolute;
+    right: 25px;
+    font-size: 1.4rem;
+}
+
+.register-btn:hover{
+    background-color: #157347;
+    transform: translateY(-2px);
+}
+
+/* Divider */
+.register-divider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 20px 0;
+}
+
+.register-divider span{
+    flex: 1;
+    height: 1px;
+    background-color: #e1e5e8;
+}
+
+.register-divider p{
+    margin: 0;
+    color: #7b8794;
+    font-size: 0.9rem;
+}
+
+/* Google register */
+.google-register-btn{
+    width: 100%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.google-register-btn i{
+    font-size: 1.3rem;
+    color: #4285f4;
+}
+
+.google-register-btn:hover{
+    background-color: #f8f9fa;
+    color: #198754;
+}
+
+/* Sign up */
+.login-text{
+    text-align: center;
+    margin: 30px 0 0;
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+.login-text a{
+    color: #198754;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.signup-text a:hover {
+    color: #157347;
+}
+
+/* Responsive */
+
+@media (max-width: 991px){
+    .register-left{
+        width: 40%;
+        padding: 30px 35px;
+        background-size: 115% auto;
+    }
+
+    .register-right{
+        width: 60%;
+        padding: 20px 30px;
+    }
+
+    /* Left side */
+    .register-brand h2{
+        font-size: 1.7rem;
+    }
+
+    .register-brand p{
+        font-size: 0.85rem;
+    }
+
+    .register-welcome{
+        margin-top: 25px;
+    }
+
+    .register-welcome h1{
+        font-size: 2rem;
+    }
+
+    .register-welcome p{
+        font-size: 0.9rem;
+    }
+
+    /* Right card */
+    .register-heading{
+        padding: 30px 40px;
+        border-radius: 20px;
+    }
+
+    .register-heading h1{
+        font-size: 2rem;
+    }
+
+    .register-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Input box */
+    .input-box{
+        height: 46px;
+        padding: 0 16px;
+    }
+
+    .input-box > i:first-child{
+        font-size: 1.25rem;
+        margin-right: 12px;
+    }
+}
+
+@media (max-width: 767px){
+    .register-page {
+        display: block;
+        min-height: 100vh;
+        overflow: visible;
+    }
+
+     .register-left {
+        width: 100%;
+        min-height: 280px;
+
+        padding: 25px 25px 30px;
+
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+
+
+    .register-brand h2 {
+        font-size: 1.6rem;
+    }
+
+    .register-brand p {
+        font-size: 0.8rem;
+    }
+
+
+    .register-welcome {
+        margin-top: 30px;
+    }
+
+    .register-welcome h1 {
+        font-size: 2.2rem;
+    }
+
+    .register-welcome p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    .register-green-line {
+        width: 100px;
+    }
+
+     .register-right {
+        width: 100%;
+        min-height: auto;
+
+        padding: 25px 18px 40px;
+
+        align-items: flex-start;
+    }
+
+
+    /* register card */
+
+    .register-heading {
+        width: 100%;
+        padding: 30px 22px;
+
+        border-radius: 18px;
+    }
+
+
+    .register-heading h1 {
+        font-size: 1.8rem;
+        line-height: 1.25;
+    }
+
+    .register-subtitle {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+
+    .input-box {
+        height: 48px;
+        padding: 0 15px;
+    }
+
+    .input-box > i:first-child {
+        font-size: 1.2rem;
+        margin-right: 12px;
+    }
+
+    .input-box input {
+        font-size: 0.9rem;
+    }
+
+    .password-toggle {
+        font-size: 1.15rem;
+    }
+
+    .register-options {
+        margin: 5px 0 20px;
+    }
+
+    .remember-me {
+        font-size: 0.82rem;
+        gap: 7px;
+    }
+
+    .remember-me input {
+        width: 17px;
+        height: 17px;
+    }
+
+    .forgot-password {
+        font-size: 0.82rem;
+    }
+
+    .register-btn {
+        height: 48px;
+        font-size: 0.95rem;
+    }
+
+    .register-btn i {
+        right: 18px;
+        font-size: 1.2rem;
+    }
+
+    .google-register-btn {
+        height: 44px;
+        font-size: 0.9rem;
+    }
+
+
+    /* Divider */
+
+    .register-divider {
+        margin: 18px 0;
+        gap: 12px;
+    }
+
+    .signup-text {
+        font-size: 0.85rem;
+        margin-top: 22px;
+    }
+}
+
+
+
+@media (max-width: 400px) {
+
+    .register-left {
+        min-height: 250px;
+        padding: 20px 18px 25px;
+
+        background: none;
+    }
+
+
+    .register-brand h2 {
+        font-size: 1.45rem;
+    }
+
+    .register-brand p {
+        font-size: 0.75rem;
+    }
+
+
+    .register-welcome {
+        margin-top: 25px;
+    }
+
+    .register-welcome h1 {
+        font-size: 2rem;
+    }
+
+    .register-welcome p {
+        font-size: 0.82rem;
+    }
+
+
+    .register-right {
+        padding: 18px 12px 30px;
+    }
+
+
+    .register-heading {
+        padding: 25px 18px;
+    }
+
+
+    .register-heading h1 {
+        font-size: 1.55rem;
+    }
+
+    .register-subtitle {
+        font-size: 0.8rem;
+    }
+
+
+    .remember-me {
+        font-size: 0.78rem;
+    }
+
+    .forgot-password {
+        font-size: 0.78rem;
+    }
+
+}

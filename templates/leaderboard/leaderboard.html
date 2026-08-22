@@ -1,0 +1,248 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content  %}
+
+<!-- leaderboard -->
+ <section class="leaderboard section">
+    <div class="container">
+        <div class="row align-items-center">
+ 
+            <!-- left section -->
+            <div class="col-lg-6 leaderboard-content">
+                <h1 class="leaderboard-title">Harit <span>Leaderboard</span></h1>
+
+                <div class="green-line"></div>
+
+                <p class="leaderboard-description">
+                    Responsible actions lead to a cleaner tomorrow.
+                    <br>
+                    Quality, consistency and community matter the most.
+                </p>
+                
+                <div class="leaderboard-info-box">
+                    <div class="leaderboard-info-icon">
+                        <i class="bi bi-leaf"></i>
+
+                        
+                    </div>
+                    <p class="leaderboard-info-text">
+                        Rankings are based on 
+                        <span>responsible waste management</span>, 
+                        <br>
+                        not just the amount of waste collected.</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 leaderboard-image-section">
+                <img src="{% static 'images/leaderboard-cups.jpeg' %}" alt="leeaderboard-trophys" class="img-fluid leaderboard-cups">
+            </div> 
+            
+        </div>
+    </div>
+
+ </section>
+
+ <!-- top changemkers -->
+<section class="top-changemakers-section">
+    <div class="container">
+        <!-- filters -->
+         <div class="leaderboard-filters">
+            <!-- left filter button -->
+            <div class="leaderboard-time-filters">
+                <!-- filter button 1 -->
+                <button class="leaderboard-filter-btn active">
+                    <i class="bi bi-trophy"></i>
+                    All Time
+                </button>
+
+                <!-- filter button 2 -->
+                <button class="leaderboard-filter-btn">
+                    <i class="bi bi-calendar3"></i>
+                    This Month
+                </button>
+
+                <!-- filter button 3 -->
+                <button class="leaderboard-filter-btn">
+                    <i class="bi bi-calendar-week"></i>
+                    This Week
+                </button>
+            </div>
+
+            <!-- right selection button -->
+            <div class="leaderboard-city-filter">
+                <select>
+                    <option >All Cities</option>
+                    <option >Pune</option>
+                    <option >Mumbai</option>
+                    <option >Nashik</option>
+                </select>
+            </div>
+
+         </div>
+
+         <!-- heading -->
+          <div class="top-changemakers-heading">
+            <span>&#127811;</span>
+            <h2>Top 3 Changemakers</h2>
+            <span>&#127811;</span>
+          </div>
+
+          <!-- top 3 cards -->
+           <div class="top-changemakers-cards">
+                <!-- rank 2 -->
+                
+                <div class="top-user-card rank2">
+                    <div class="rank-badge">
+                        2
+                    </div>
+                    <div class="top-user-image">
+                        <img src="{% static 'images/rank-2.jpeg' %}" alt="rank2">
+
+                    </div>
+
+                    <h3>Mohan Chorghade</h3>
+                    <p class="top-user-location">
+                        <i class="bi bi-geo-alt"></i>
+                        Mumbai
+                    </p>
+                    <div class="green-score">
+                        <h4>9,420 <i class="bi bi-leaf-fill"></i></h4>
+                        <p>Green score</p>
+                    </div>
+
+                    <!-- stats -->
+                     <div class="user-performance">
+                        <div class="performance-item">
+                            <span>Segregation <br>Quality</span>
+                            <strong>96%</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                         <div class="performance-item">
+                            <span>Consistency</span>
+                            <strong>91%</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                         <div class="performance-item">
+                            <span>Community <br>Contribution</span>
+                            <strong>High</strong>
+                            <small>Very Good</small>
+                        </div>
+
+                         <div class="performance-item">
+                            <span>Waste  <br>Contribution</span>
+                            <strong>35kg</strong>
+                            <small>Good</small>
+                        </div>
+
+                     </div>
+                </div>
+
+                <!-- rank 1 -->
+                <div class="top-user-card rank1">
+                    <div class="rank-badge">
+                        1
+                    </div>
+                    <div class="top-user-image">
+                        <img src="{%static 'images/rank-1.jpeg'%}" alt="rank1">
+                    </div>
+
+                    <h3>Ashvini unawane</h3>
+                    <p class="top-user-location">
+                        <i class="bi bi-geo-alt"></i>
+                        Pune
+                    </p>
+
+                    <div class="green-score">
+                        <h4>9,850 <i class="bi bi-leaf-fill"></i></h4>
+                        <p>Green Score</p>
+                    </div>
+
+                    <!-- /stats -->
+                    <div class="user-performance">
+                        <div class="performance-item">
+                            <span>Segregation <br> Quality</span>
+                            <strong>98%</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Consistency</span>
+                            <strong>90%</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Community<br> Contribution</span>
+                            <strong>High</strong>
+                            <small>Outstanding</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Waste<br>Contribution</span>
+                            <strong>50kg</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <!-- rank 3 -->
+                 <div class="top-user-card rank3">
+                    <div class="rank-badge">
+                        3
+                    </div>
+                    <div class="top-user-image">
+                        <img src="{% static 'images/rank-3.jpeg'%}" alt="rank3">
+                    </div>
+                    <h3>Jess Conte</h3>
+                    <p class="top-user-location">
+                        <i class="bi bi-geo-alt"></i>
+                        Pune
+                    </p>
+
+                    <div class="green-score">
+                        <h4>9,180 <i class="bi bi-leaf-fill"></i></h4>
+                        <p>Green Score</p>
+                    </div>
+
+                    <!-- /stats -->
+                    <div class="user-performance">
+                        <div class="performance-item">
+                            <span>Segregation <br> Quality</span>
+                            <strong>94%</strong>
+                            <small>Very Good</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Consistency</span>
+                            <strong>92%</strong>
+                            <small>Excellent</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Community<br> Contribution</span>
+                            <strong>Medium</strong>
+                            <small>Good</small>
+                        </div>
+
+                        <div class="performance-item">
+                            <span>Waste<br>Contribution</span>
+                            <strong>32kg</strong>
+                            <small>Good</small>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+           </div>
+
+
+    </div>
+</section>
+{% endblock  %}

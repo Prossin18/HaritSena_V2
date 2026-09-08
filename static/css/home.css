@@ -635,12 +635,12 @@ transform: translateY(-3px);
    REWARDS SECTION
 ========================= */
 
-.reward-section {
+.reward-home-section {
     padding: 80px 0;
     background: #fff;
 }
 
-.reward-section .section-heading-title {
+.reward-home-section .section-heading-title {
     text-align: center;
     margin-bottom: 35px;
 }

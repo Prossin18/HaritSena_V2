@@ -1,0 +1,467 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content  %}
+
+<!-- Rewards hero section -->
+<!-- <section class="rewards-hero">
+    <div class="rewards-hero-content">
+        <!-- left side -->
+        <!-- <div class="rewards-hero-text">
+            <h1>
+                Turn Your Green Actions
+                <span>Into Rewards</span>
+            </h1>
+
+            <p>Request pickups, contributeto a cleaner environment
+                and earn exciting rewards.
+            </p>
+
+            <div class="hero-points-card">
+                <div class="points-icon">
+                    <i class="bi bi-leaf">
+
+                    </i>
+                </div>
+
+                <div class="points-text">
+                    <span>Your Green Points</span>
+                    <strong>2,450</strong>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Right side -->
+        <!-- <div class="col-lg-6 leaderboard-image-section">
+            <img src="{% static 'images/rewards-hero1.png' %}" alt="Rewards Gift" class="img-fluid leaderboard-cups">
+        </div> 
+    </div>
+</section>  -->
+
+<!-- leaderboard -->
+ <section class="rewards section">
+    <div class="container">
+        <div class="row align-items-center">
+ 
+            <!-- left section -->
+            <div class="col-lg-6 rewards-content">
+                <h1 class="rewards-title">
+                    Turn Your Green Actions
+                    <span>Into Rewards</span>
+                </h1>
+
+                <p class="rewards-description">
+                    Request pickups, contributeto a cleaner environment
+                    and earn exciting rewards.
+                </p>
+                
+                <div class="hero-points-card">
+                    <div class="points-icon">
+                        <i class="bi bi-leaf"></i>
+                    </div>
+
+                    <div class="points-text">
+                        <span>Your Green Points</span>
+                        <strong>2,450</strong>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 rewards-image-section">
+                <img src="{% static 'images/rewards-hero1.png' %}" alt="rewards-gift" class="img-fluid">
+            </div> 
+            
+        </div>
+    </div>
+
+ </section>
+ <!-- Poinnts Summary Section -->
+ <section class="points-summary-section">
+    <div class="points-summary">
+
+        <!-- Current Point -->
+        <div class="points-summary-card">
+            <div class="summary-icon">
+                <i class="bi bi-leaf"></i>
+            </div>
+
+            <div class="summary-info">
+                <span>Current Green Points</span>
+                <strong>2,450</strong>
+                <small>points</small>
+            </div>
+
+        </div>
+
+        <!-- Points Earned -->
+        <div class="points-summary-card">
+            <div class="summary-icon">
+                <i class="bi bi-graph-up-arrow"></i>
+            </div>
+
+            <div class="summary-info">
+                <span>Points Earned</span>
+                <strong>3,250</strong>
+                <small>points</small>
+            </div>
+        </div>
+
+        <!-- Points  Redeemed -->
+        <div class="points-summary-card">
+            <div class="summary-icon">
+                <i class="bi bi-gift"></i>
+            </div>
+
+            <div class="summary-info">
+                <span>Points Redeemed</span>
+                <strong>800</strong>
+                <small>points</small>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+<section class="reward-section" data-aos="fade-up" data-aos-duration="800">
+    <div class="container">
+        <div class="rewards-header">
+            <div>
+                <h2>Available Rewards</h2>
+                <p>Redeem your points for exciting eco-friendly rewards.</p>
+            </div>
+
+            <a href="#" class="view-all">
+                View All Rewards <span>→</span>
+            </a>
+        </div>
+
+        <div class="rewards-slider">
+            <!-- LEFT BUTTON -->
+            <button class="reward-nav prev" type="button" data-aos="fade-right" data-aos-delay="300">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <div class="rewards-wrapper">
+            
+                <!-- Card 1 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="reward-image">
+                        <img src="{% static 'images/plant-reward.png' %}" alt="">
+                    </div>
+
+                    <h5>Plant a Tree</h5>
+
+                    <p class="reward-points">500 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="reward-image">
+                        <img src="{% static 'images/Eco-friendly-bag.png' %}" alt="">
+                    </div>
+
+                    <h5>Eco Friendly Bag</h5>
+
+                    <p class="reward-points">1000 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="reward-image">
+                        <img src="{% static 'images/Penciles.png' %}" alt="">
+                    </div>
+
+                    <h5>Plantable Penciles</h5>
+
+                    <p class="reward-points">1000 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="reward-image">
+                        <img src="{% static 'images/steel-bottle.png' %}" alt="">
+                    </div>
+
+                    <h5>Steel Bottle</h5>
+
+                    <p class="reward-points">1500 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="reward-image">
+                        <img src="{% static 'images/Shopping-voucher.png' %}" alt="">
+                    </div>
+
+                    <h5>Shopping voucher</h5>
+
+                    <p class="reward-points">2500 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="reward-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="reward-image">
+                        <img src="{% static 'images/Mini-Garden-Kit.jpeg' %}" alt="">
+                    </div>
+
+                    <h5>Mini Garden Kit</h5>
+
+                    <p class="reward-points">5000 points</p>
+
+                    <a href="#" class="reward-btn">
+                        Redeem now
+                    </a>
+                </div>
+        </div>
+        <!-- RIGHT BUTTON -->
+        <button class="reward-nav next" type="button" data-aos="fade-left" data-aos-delay="300">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+    </div>
+    </div>
+</section>
+
+<!-- How rewards work -->
+<section class="process-rewards-section">
+    <div class="container">
+        <div class="section-heading-title" data-aos="fade-up"data-aos-duration="800">
+            <h2 class="section-title">
+                How Rewards Work?
+            </h2>
+        </div>
+
+        <!-- Process Timeline -->
+        <div class="process-rewards-wrapper">
+                <!-- step 1 -->
+                <!-- <div class="process-item" data-aos="zoom-in"data-aos-duration="700" data-aos-delay="100">
+                    <div class="process-icon">📝
+                        <div class="process-number">1</div>
+                    </div>
+                    <h4 class="process-title">Sign Up</h4>
+                    <p class="process-description">Create your account in minutes.</p>
+                    <div class="process-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div> -->
+
+                <!-- step 2 -->
+                <div class="process-item" data-aos="zoom-in"data-aos-duration="700" data-aos-delay="200">
+                    <div class="process-icon">🗑️
+                        <div class="process-number">1</div>
+                    </div>
+                    <h4 class="process-title">Request Pickup</h4>
+                    <p class="process-description">Submit a waste pickup request.</p>
+                     <div class="process-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- step 3 -->
+                <div class="process-item" data-aos="zoom-in"data-aos-duration="700" data-aos-delay="300">
+                    <div class="process-icon">🚚
+                        <div class="process-number">2</div>
+                    </div>
+                    <h4 class="process-title">Waste Collected</h4>
+                    <p class="process-description">Collector ensures proper segregation.</p>
+                     <div class="process-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- step 4 -->
+                <div class="process-item" data-aos="zoom-in"data-aos-duration="700" data-aos-delay="400">
+                    <div class="process-icon">♻️
+                        <div class="process-number">3</div>
+                    </div>
+                    <h4 class="process-title">Earn Green Points</h4>
+                    <p class="process-description">Green Points are based on your contribution and segregation quality.</p>
+                     <div class="process-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- step 5 -->
+                <div class="process-item" data-aos="zoom-in"data-aos-duration="700" data-aos-delay="500">
+                    <div class="process-icon">🎁
+                        <div class="process-number">4</div>
+                    </div>
+                    <h4 class="process-title">Redeem Rewards</h4>
+                    
+                   
+                    <p class="process-description">Use your points to redeem rewards.</p>
+                    <div class="process-arrow">
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Reward History Section -->
+<section class="reward-history-section">
+
+    <div class="reward-history">
+
+        <!-- Section Header -->
+        <div class="history-header">
+
+            <h2>Reward History</h2>
+
+            <a href="#" class="view-all-history">
+                View All History
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- History Table -->
+        <div class="history-table">
+
+            <!-- Table Header -->
+            <div class="history-row history-header-row">
+
+                <div>Reward</div>
+                <div>Points Spent</div>
+                <div>Date</div>
+                <div>Status</div>
+
+            </div>
+
+
+            <!-- Row 1 -->
+            <div class="history-row">
+
+                <div class="reward-name">
+
+                    <div class="history-image">
+                        <img src="{% static 'images/Eco-friendly-bag.png' %}"
+                             alt="Eco-Friendly Bag">
+                    </div>
+
+                    <span>Eco-Friendly Tote Bag</span>
+
+                </div>
+
+                <div>1000 Points</div>
+
+                <div>10 May 2024</div>
+
+                <div>
+                    <span class="status delivered">
+                        Delivered
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Row 2 -->
+            <div class="history-row">
+
+                <div class="reward-name">
+
+                    <div class="history-image">
+                        <img src="{% static 'images/plant-reward.png' %}"
+                             alt="Plant a Tree">
+                    </div>
+
+                    <span>Plant a Tree</span>
+
+                </div>
+
+                <div>500 Points</div>
+
+                <div>25 Apr 2024</div>
+
+                <div>
+                    <span class="status delivered">
+                        Delivered
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Row 3 -->
+            <div class="history-row">
+
+                <div class="reward-name">
+
+                    <div class="history-image">
+                        <img src="{% static 'images/Penciles.png' %}"
+                             alt="Plantable penciles">
+                    </div>
+
+                    <span>Plantable Penciles</span>
+
+                </div>
+
+                <div>1000 Points</div>
+
+                <div>12 Apr 2024</div>
+
+                <div>
+                    <span class="status delivered">
+                        Delivered
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- Row 4 -->
+            <div class="history-row">
+
+                <div class="reward-name">
+
+                    <div class="history-image">
+                        <img src="{% static 'images/Shopping-voucher.png' %}"
+                             alt="Shopping Voucher">
+                    </div>
+
+                    <span>Shopping Voucher</span>
+
+                </div>
+
+                <div>2500 Points</div>
+
+                <div>05 Apr 2024</div>
+
+                <div>
+                    <span class="status processing">
+                        Processing
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> 
+{% endblock %}

@@ -56,7 +56,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],  
+        'DIRS': [BASE_DIR / "templates"],
         # WHY?
         # "We add the templates folder to Django's search path so render() can find HTML templates from a common location."
         'APP_DIRS': True,
@@ -123,5 +123,3 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / "static",
 ]
-
-

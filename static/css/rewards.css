@@ -1,0 +1,1134 @@
+/* Rewards hero section */
+.rewards{
+    background: linear-gradient(135deg, #f4faef 0%, #ffffff 55%, #eef9f0 100%);
+    overflow: hidden ;
+    padding: 60px 0;
+}
+
+/* Rewards Content Left Side */
+.rewards-content{
+    padding-right: 50px;
+}
+
+.rewards-title{
+    font-family: "Poppins", sans-serif;
+    font-size: 52px;
+    line-height: 1.12;
+    font-weight: 700;
+    color: #1d2b20;
+    margin-bottom: 22px;
+}
+
+.rewards-title span{
+    display: block;
+    color: #198754;
+}
+
+.rewards-description{
+    font-family: "Inter", sans-serif;
+    max-width: 520px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #66736a;
+    margin-bottom: 32px;
+}
+
+/* Green Points Card */
+.hero-points-card{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    width: fit-content;
+    min-width: 250px;
+    padding: 18px 24px;
+    background: #198754;
+    border: 1px solid #e4eee5;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(45, 100, 55, 0.08);
+    color: white;
+}
+
+/* Leaf icon */
+.points-icon{
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #eaf7ec;
+    border-radius: 12px;
+    color: #39a852;
+    font-size: 25px;
+
+}
+
+/* Points text */
+.points-text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.points-text span{
+    font-size: 13px;
+    font-weight: 500;
+    color: #c9d4e0;
+}
+
+.points-text strong{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Rewards hero image */
+.rewards-image-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.rewards-image-section img{
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+
+}
+
+/* responsive */
+@media(max-width: 1199px){
+    .rewards-title{
+            font-size: 46px;
+    }
+
+    .rewards-content{
+        padding-right: 30px;
+    }
+
+    .rewards-image-section img{
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 991px){
+    .rewards{
+        padding: 40px 0 50px;
+    }
+
+    .rewards-content{
+        padding-right: 15px;
+        text-align: center;
+    }
+
+    .rewards-title{
+        font-size: 44px;
+    }
+    .rewards-description{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-points-card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rewards-image-section{
+        margin-top: 35px;
+    }
+
+    .rewards-image-section img{
+        max-width: 500px;
+    }
+}
+
+@media(max-width: 767px){
+    .rewards{
+        padding: 30px 0 40px;
+    }
+
+    .rewards-title{
+        font-size: 38px;
+        line-height: 1.15;
+        margin-bottom: 18px;
+    }
+
+    .rewards-description{
+        font-size: 16px;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-points-card{
+        min-width: 240px;
+        padding: 16px 20px;
+    }
+
+    .points-icon{
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+    }
+
+    .points-text strong{
+        font-size: 24px;
+    }
+
+    .rewards-image-section{
+        margin-top: 30px;
+    }
+
+    .rewards-image-section img{
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media(max-width: 480px){
+    .rewards{
+        padding: 25px 0 35px;
+    }
+
+    .rewards-title{
+        font-size: 32px;
+    }
+
+    .rewards-description{
+        font-size: 15px;
+        padding: 0 10px;
+    }
+
+    .hero-points-card{
+        min-width: 230px;
+        padding: 14px 18px;
+        gap: 14px;
+    }
+
+    .points-icon{
+        width: 45px;
+        height: 45px;
+        font-size: 21px;
+    }
+
+    .points-text span{
+        font-size: 12px;
+    }
+
+    .points-text strong{
+        font-size: 22px;
+    }
+
+    .rewards-image-section img{
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Points Summary Section */
+
+.points-summary-section{
+    padding: 0 7%;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* main summary container */
+.points-summary{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+/* individual cards */
+.points-summary-card{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 30px 35px;
+    min-height: 150px;  
+}
+
+/* Divider */
+.points-summary-card:not(:last-child){
+    border-right: 1px solid #e5e7eb;
+}
+
+/* Icons */
+.summary-icon{
+    width: 58px;
+    height: 58px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #edf8e9;
+    color: #16803c;
+    font-size: 27px;
+}
+
+/* Text area */
+.summary-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-info span{
+    font-size: 14px;
+    color: #4b5563;
+    margin-bottom: 7px;
+}
+
+.summary-info strong{
+    font-size: 30px;
+    line-height: 1;
+    color: #111827;
+    font-weight: 700;
+}
+
+.summary-info small{
+    margin-top: 5px;
+    font-size: 13px;
+    color: #16803c;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media(max-width: 991px){
+    .points-summary-section{
+        padding: 0 5%;
+        margin-top: -30px;
+    }
+
+    .points-summary-card{
+        padding: 20px 25px;
+        gap: 12px;
+    }
+
+    .summary-icon{
+        width: 50px;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .summary-info span{
+        font-size: 13px;
+    }
+
+    .summary-info strong{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 767px){
+    .points-summary-section{
+        padding: 0 6%;
+        margin-top: -30px;
+    }
+
+    .points-summary{
+        grid-template-columns: 1fr;
+        border-radius: 15px;
+    }
+
+    .points-summary-card{
+        padding: 22px 25px;
+        min-height: auto;
+    }
+
+    .points-summary-card:not(:last-child){
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .summary-icon{
+        width: 50px;
+        height: 50px;
+        font-size: 23px;
+    }
+
+    .summary-info strong{
+        font-size: 26px;
+    }
+}
+
+@media(max-width: 480px){
+    .points-summary-section{
+        padding: 0 5%;
+        margin-top: -25px;
+    }
+
+    .points-summary-card{
+        padding: 18px 20px;
+        gap: 14px;
+    }
+
+    .summary-icon{
+        width: 45px;
+        height: 45px;
+        font-size: 21px;
+    }
+
+    .summary-info span{
+        font-size: 12px;
+    }
+
+    .summary-info strong{
+        font-size: 23px;
+    }
+
+    .summary-info small{
+        font-size: 12px;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------------------------------- */
+
+/* Available rewards section */
+.reward-section {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.reward-section .section-heading-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.rewards-header{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.rewards-header h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.rewards-header p{
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    color: #4b5563;
+}
+
+.rewards-header a{
+    text-decoration: none;
+    color: #198754;
+}
+
+/* =========================================
+   RESPONSIVE - 992px
+========================================= */
+
+@media (max-width: 992px) {
+
+    .reward-section {
+        padding: 45px 0;
+    }
+
+    .rewards-header {
+        padding: 0 5px;
+        margin-bottom: 25px;
+    }
+
+    .rewards-header h2 {
+        font-size: 28px;
+    }
+
+    .rewards-header p {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .rewards-header a {
+        font-size: 14px;
+    }
+
+    .rewards-wrapper {
+        gap: 18px;
+    }
+
+    .reward-card {
+        min-width: calc(33.333% - 12px);
+    }
+
+    .reward-image {
+        height: 180px;
+    }
+
+    .reward-card h5 {
+        font-size: 17px;
+    }
+
+    .reward-points {
+        font-size: 14px;
+    }
+
+    .reward-btn {
+        font-size: 14px;
+        padding: 9px 15px;
+    }
+
+    .reward-nav {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - 768px
+========================================= */
+
+@media (max-width: 768px) {
+
+    .reward-section {
+        padding: 40px 0;
+    }
+
+    .rewards-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .rewards-header h2 {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .rewards-header p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .rewards-header a {
+        font-size: 13px;
+        white-space: nowrap;
+        margin-top: 5px;
+    }
+
+    .rewards-wrapper {
+        gap: 15px;
+    }
+
+    .reward-card {
+        min-width: calc(50% - 7.5px);
+    }
+
+    .reward-image {
+        height: 170px;
+    }
+
+    .reward-card h5 {
+        font-size: 16px;
+    }
+
+    .reward-points {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    .reward-btn {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+
+    .reward-nav {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE - 484px
+========================================= */
+
+@media (max-width: 484px) {
+
+    .reward-section {
+        padding: 35px 0;
+    }
+
+    .rewards-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .rewards-header h2 {
+        font-size: 23px;
+        margin-bottom: 4px;
+    }
+
+    .rewards-header p {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .rewards-header a {
+        font-size: 13px;
+        margin-top: 2px;
+    }
+
+    .rewards-slider {
+        padding: 0 5px;
+    }
+
+    .rewards-wrapper {
+        gap: 12px;
+    }
+
+    .reward-card {
+        min-width: 100%;
+    }
+
+    .reward-image {
+        height: 190px;
+    }
+
+    .reward-card h5 {
+        font-size: 17px;
+    }
+
+    .reward-points {
+        font-size: 13px;
+    }
+
+    .reward-btn {
+        font-size: 13px;
+        padding: 9px 16px;
+    }
+
+    .reward-nav {
+        width: 32px;
+        height: 32px;
+    }
+
+    .reward-nav i {
+        font-size: 13px;
+    }
+}
+
+/* --------------------------------------------------------------------------------------------- */
+
+/* How Rewards work */
+.process-rewards-section{
+    padding: 30px 0;
+    background: linear-gradient(135deg, #f4faef 0%, #ffffff 55%, #eef9f0 100%);
+}
+
+.process-rewards-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+/* --------------------------------------------------------------------------------------------- */
+/* REWARD HISTORY SECTION */
+.reward-history-section {
+    padding: 30px 6% 50px;
+}
+
+
+.reward-history {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   PROCESS REWARDS - RESPONSIVE 992px
+===================================================== */
+
+@media (max-width: 992px) {
+
+    .process-rewards-section {
+        padding: 35px 0;
+    }
+
+    .process-rewards-wrapper {
+        gap: 35px;
+        padding: 0 15px;
+    }
+
+    .process-item {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .process-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+        margin: 0 auto 15px;
+    }
+
+    .process-number {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+    }
+
+    .process-title {
+        font-size: 17px;
+    }
+
+    .process-description {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .process-arrow {
+        right: -28px;
+    }
+
+    .process-arrow i {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================================
+   PROCESS REWARDS - RESPONSIVE 768px
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .process-rewards-section {
+        padding: 35px 0;
+    }
+
+    .process-rewards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px 25px;
+        padding: 0 20px;
+    }
+
+    .process-item {
+        width: 100%;
+        text-align: center;
+    }
+
+    .process-icon {
+        width: 62px;
+        height: 62px;
+        font-size: 27px;
+        margin: 0 auto 14px;
+    }
+
+    .process-number {
+        width: 23px;
+        height: 23px;
+        font-size: 11px;
+    }
+
+    .process-title {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    .process-description {
+        font-size: 13px;
+        line-height: 1.5;
+        max-width: 230px;
+        margin: 0 auto;
+    }
+
+    /* hide arrows because layout becomes 2 columns */
+    .process-arrow {
+        display: none;
+    }
+}
+
+
+/* =====================================================
+   PROCESS REWARDS - RESPONSIVE 484px
+===================================================== */
+
+@media (max-width: 484px) {
+
+    .process-rewards-section {
+        padding: 30px 0;
+    }
+
+    .process-rewards-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 20px;
+    }
+
+    .process-item {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    .process-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 26px;
+        margin: 0 auto 12px;
+    }
+
+    .process-number {
+        width: 22px;
+        height: 22px;
+        font-size: 11px;
+    }
+
+    .process-title {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+
+    .process-description {
+        font-size: 12px;
+        line-height: 1.5;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    /* arrows hidden on mobile */
+    .process-arrow {
+        display: none;
+    }
+}
+
+   /* HISTORY HEADER */
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.history-header h2 {
+    margin: 0;
+
+    font-size: 30px;
+    font-weight: 600;
+
+    color: #111827;
+}
+
+.view-all-history {
+    color: #087f35;
+
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.view-all-history i {
+    margin-left: 5px;
+}
+
+
+   /* HISTORY TABLE */
+
+.history-table {
+    width: 100%;
+
+    border: 1px solid #e1e7e1;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+}
+
+
+   /* EACH ROW */
+
+.history-row {
+    display: grid;
+
+    grid-template-columns: 2.2fr 1.2fr 1.2fr 0.8fr;
+
+    align-items: center;
+
+    min-height: 60px;
+
+    padding: 0 20px;
+
+    border-bottom: 1px solid #eef1ee;
+
+    font-size: 15px;
+
+    color: #1f2937;
+}
+
+
+/* Remove border from last row */
+
+.history-row:last-child {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   TABLE HEADER
+   ========================================= */
+
+.history-header-row {
+    min-height: 40px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    color: #374151;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================================
+   REWARD NAME
+   ========================================= */
+
+.reward-name {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   HISTORY IMAGE
+   ========================================= */
+
+.history-image {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 5px;
+
+    background-color: #edf7e8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+.history-image img {
+    width: 30px;
+    height: 30px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+.status {
+    display: inline-block;
+
+    padding: 3px 9px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* Delivered */
+
+.status.delivered {
+    color: #287a36;
+
+    background-color: #edf8eb;
+
+    border: 1px solid #d5ebd2;
+}
+
+
+/* Processing */
+
+.status.processing {
+    color: #e88900;
+
+    background-color: #fff8e8;
+
+    border: 1px solid #f8dfaa;
+}
+
+/* =========================================
+   REWARD HISTORY - TABLET
+   992px and below
+   ========================================= */
+
+@media (max-width: 992px) {
+
+    .reward-history-section {
+        padding: 0 4% 45px;
+    }
+
+    .reward-history {
+        width: 100%;
+    }
+
+    .history-row {
+        grid-template-columns: 2fr 1.2fr 1.2fr 0.9fr;
+        padding: 0 15px;
+        min-height: 42px;
+    }
+
+    .history-header-row {
+        min-height: 36px;
+    }
+
+    .reward-name {
+        gap: 12px;
+    }
+
+    .history-image {
+        width: 30px;
+        height: 30px;
+    }
+
+    .history-image img {
+        width: 23px;
+        height: 23px;
+    }
+
+}
+@media (max-width: 484px) {
+
+    .reward-history-section {
+        padding: 25px 12px 40px;
+    }
+
+    .reward-history {
+        width: 100%;
+    }
+
+    /* Header */
+    .reward-history-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+
+    .reward-history-header h2 {
+        font-size: 26px;
+        margin: 0;
+    }
+
+    .reward-history-header a {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* Table wrapper */
+    .reward-history-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        border-radius: 15px;
+    }
+
+    /* Table */
+    .reward-history-table {
+        min-width: 650px;
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /* Header cells */
+    .reward-history-table th {
+        font-size: 14px;
+        padding: 12px 10px;
+        white-space: nowrap;
+    }
+
+    /* Table cells */
+    .reward-history-table td {
+        font-size: 14px;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    /* Reward column */
+    .reward-history-table th:first-child {
+        width: 250px;
+    }
+
+    .reward-history-table td:first-child {
+        width: 250px;
+    }
+
+    /* Points column */
+    .reward-history-table th:nth-child(2),
+    .reward-history-table td:nth-child(2) {
+        width: 120px;
+        white-space: nowrap;
+    }
+
+    /* Date column */
+    .reward-history-table th:nth-child(3),
+    .reward-history-table td:nth-child(3) {
+        width: 120px;
+        white-space: nowrap;
+    }
+
+    /* Status column */
+    .reward-history-table th:nth-child(4),
+    .reward-history-table td:nth-child(4) {
+        width: 130px;
+        white-space: nowrap;
+    }
+
+    /* Reward name + image */
+    .reward-history-table .reward-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        white-space: nowrap;
+    }
+
+    .reward-history-table .reward-info img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+        flex-shrink: 0;
+    }
+
+    /* Status badge */
+    .reward-status {
+        display: inline-block;
+        padding: 7px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+}

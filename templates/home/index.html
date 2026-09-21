@@ -1,6 +1,16 @@
 {%extends 'base.html' %}
 {% load static %}
 {% block content %}
+{% if messages %}
+    {% for message in messages %}
+        {% if message.tags == "success" %}
+            <div class= "alert alert-success" id = "success-message">
+                {{message}}
+            </div>
+        {% endif %}
+    {%endfor%}
+{%endif%}
+
 <section class="hero-section single_slider d-flex align-items-center "  data-aos="fade-up" data-aos-delay="200">
         <div class="container mt-0">
             <div class="row align-items-center">
@@ -442,5 +452,15 @@
 </section>
 <!-- Rewards Section end -->
 
+<script>
+        setTimeout(function(){
+            const message = document.getElementById("success-message");
+            if(message)
+            {
+                message.style.display = "none";
+            }
+
+        },3000);
+</script>
 
 {% endblock  %}

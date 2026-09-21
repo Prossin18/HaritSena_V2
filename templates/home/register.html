@@ -58,8 +58,20 @@
                 </p>
 
                 <!-- Form -->
-                <form class="register-form" autocomplete="off">
+                 {% if messages%}
+                 {% for message in messages%}
+                    {% if message.tags == "error" %}
+                        <div class="alert alert-danger" id = "error-message">
+                            {{message}}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% endif %}
+                <form class="register-form" method = "POST" autocomplete="off">
                     <!-- Full Name -->
+                     {% comment %} { % csrf_token % } {% endcomment %}
+                    {% csrf_token %}
+                     {% comment %} django ko ek unique cross security token banane bolta hain {% endcomment %}
                     <div class="form-group" data-aos="fade-up" data-aos-delay="150">
                         <label for="fullname">Full Name</label>
 
@@ -174,5 +186,15 @@
                 offset : 100
             
             });
+    </script>
+    <script>
+        setTimeout(function()
+        {
+            const message = document.getElementById("error-message");
+            if (message)
+            {
+                message.style.display = "none";
+            }
+        },3000);
     </script>
 </body>

@@ -609,3 +609,21 @@
     }
 
 }
+
+.alert {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Error message */
+.alert-danger {
+    background-color: #fde2e2;
+    color: #b42323;
+    border: 1px solid #f3aaaa;
+}

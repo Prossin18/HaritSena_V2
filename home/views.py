@@ -17,6 +17,20 @@ def contact(request):
     return render(request,'home/contact.html') 
 
 def login(request):
+    if request.method == 'POST':
+
+        username = request.POST.get("username")
+        password = request.POST.get("password")
+        if User.objects.filter(username = username ).exists():
+            user = User.objects.get(username = username)
+
+            if user.check_password(password):
+                auth_login(request,user)
+                return redirect("home")
+
+        messages.error(request,"Invalid username or password.")
+        return redirect("login")
+
     return render(request,'home/login.html') 
 
 def register(request):

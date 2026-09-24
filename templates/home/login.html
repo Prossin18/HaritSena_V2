@@ -56,7 +56,9 @@
                 </p>
 
                 <!-- Form -->
-                <form class="login-form" autocomplete="off">
+                <form class="login-form" method="POST" autocomplete="off">
+
+                    {% csrf_token %}
                     <!-- Email -->
                     <div class="form-group" data-aos="fade-up" data-aos-delay="150">
                         <label for="username">Username</label>
@@ -80,7 +82,7 @@
                         <div class="input-box">
                             <i class="bi bi-lock"></i>
 
-                            <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password" name="login_name">
+                            <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password" name="password">
 
                             <i class="bi bi-eye password-toggle"></i>
                         </div>
